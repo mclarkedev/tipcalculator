@@ -1,0 +1,73 @@
+<!--TO DO: MOBILE FRIENDLY-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+   
+</head>
+<body>
+
+
+<!--Calculator-->
+
+<div id="calcbody">
+
+    <h1>Tip Calculator</h1>
+    <hr>
+
+    <!--Bill Amount-->
+    <h3>Bill Amount</h3>
+    <div class="billamount">
+        $ <input id="billInput" type="number" placeholder=0.00> USD
+        
+    </div>
+
+    <!--Tip Select-->
+    <h3>How Was Your Service?</h3>
+    <div class="tipselectarea">
+        <select id="tipSelect">
+            <option disabled selected value="0">Service Level</option>
+            <option value=.05>Poor - 5%</option>
+            <option value=.10>Could Be Better - 10%</option>
+            <option value=.15>Average - 15%</option>
+            <option value=.20>Very Good - 20%</option>
+            <option value=.25>Superb! - 25%</option>
+            <option value=.30>Incredible! - 30%</option>
+        </select>
+    </div>
+
+
+    <!--BUTTON-->
+    <div class="button">
+        <button id="submitbutton"><a href=>Calculate</a></button>
+    </div>
+
+    <!--Tip Amount-->
+    <h3>Your Tip Will Be:</h3>
+    <div class="tipamount">
+        $ <input id="tipAmountInput" type="number" disabled> USD
+    </div>
+
+    <!--Bill Total-->
+    <div class="billtotalbg">
+        <h3>Bill Total</h3>
+            $ <input id="billTotalInput" type="number" disabled> USD
+
+    </div>
+</div>
+
+<div class="appfooter">
+    <p>Built by <a href="https://www.meganclarkedev.com">Megan Clarke</a></p>
+</div>
+
+<!--Script Tag-->
+<script src="script.js"></script>
+
+</body>
+</html>
